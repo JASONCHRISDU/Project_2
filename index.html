@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>金流平台Demo</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<!-- icon + css -->
+<link rel="Shortcut Icon" type="image/x-icon" href="images/app/128.png" />
+<link href="images/app/512.png" rel="apple-touch-icon" />
+<link href="images/app/152.png" rel="apple-touch-icon" sizes="152x152" />
+<link href="images/app/167.png" rel="apple-touch-icon" sizes="167x167" />
+<link href="images/app/180.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="images/app/192.png" rel="icon" sizes="192x192" />
+<link href="images/app/128.png" rel="icon" sizes="128x128" />
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/animate.css" />
+<link rel="stylesheet" href="css/custom.min.css" />
+</head>
+
+<body>
+<!-- PC -->
+<div class="wrap pc-template">
+	<!-- loading動效 -->
+	<div id="loading">
+    	<div></div>
+        <div></div>
+        <span></span>
+	</div>
+	<!-- 頭部選單 -->
+	<header id="header">
+		<nav>
+			<a href="index.html" class="logo" title="富寶首頁"><img src="images/logo.png" /></a>
+			<div class="menu">
+				<ul class="menu-ul clearfix">
+					<li class="active"><a href="#product" data-index='0'>产品特色</a></li>
+					<li><a href="#pay" data-index='3' onclick="">支付流程</a></li>
+					<li><a href="#deal" data-index='4'>交易管理</a></li>
+					<li><a href="#partner" data-index='5'>合作伙伴</a></li>
+					<li><a href="#about" data-index='6'>关于富宝</a></li>
+				</ul>
+				<div class="line"></div>
+			</div>
+			<div class="mobile-menu"></div>					
+		</nav>			
+	</header>
+	<!-- 內容1 -->
+	<section class="section" id="product" data-index="0">
+		<div class="section-product-wrap">
+			<div class="section-product-1">
+				<div id="pixi"></div>
+				<div class="container">
+					<h1>方便快捷的金融接入体验</h1>
+					<h2>让您的支付和收款更为简单！</h1>
+					<button onclick="jFun.btnMove(0, 1)">富宝支付解决方案</button>
+				</div>			
+			</div>	
+			<div class="section-product-2 clearfix">			
+				<div class="container">
+					<div class="product-box-content clearfix">
+						<div class="product-box">
+							<img src="images/sec1/s-product-icon1.png" class="" alt="富寶-安全支付，保障无忧" />
+							<h3>安全支付，保障无忧</h3>
+							<p>富宝通过多项安全认证<br/>为客户提供标准的信息安全保证</p>
+						</div>
+						<div class="product-box">
+							<img src="images/sec1/s-product-icon2.png" class="" alt="富寶-存取灵活，闪速到账" />
+							<h3>存取灵活，闪速到账</h3>
+							<p>一页完成所有支付流程<br/>完整实现流动现金的便利性</p>
+						</div>
+						<div class="product-box">
+							<img src="images/sec1/s-product-icon3.png" class="" alt="富寶-风险监控，支付首选" />
+							<h3>风险监控，支付首选</h3>
+							<p>7*24小时的系统自动监控<br/>能更好地保护客户的账户安全</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+	<!-- 內容2 -->
+	<section class="section" id="pay" data-index="1">
+		<div class="section-pay-wrap">
+			<div class="section-pay-1">
+				<div class="container">
+					<h1>║ 快捷支付系统</h1>
+					<p>富宝的快捷支付服务，支持多种支付方式<br/>
+						让会员免除登录后再交易的繁复程序<br/>
+						只需于单一页面中输入帐号及存款金额，即可轻松地完成支付<br/><br/>
+						另外，由于还搭配使用多重风控技术<br/>
+						因此更极大地提升了交易的便捷性及安全性</p>
+				</div>		
+			</div>
+		</div>
+	</section>
+	<!-- 內容3 -->
+	<section class="section" id="deal" data-index="2">
+		<div class="section-deal-wrap">
+			<div class="section-deal-1">
+				<div class="deal-box-left">
+					<img src="images/sec3/s-deal-icon1.png" class="" alt="富寶-支付超便利" />
+					<h1>支付超便利</h1>
+					<h2>会员不仅可选用熟悉的支付方式<br/>
+					还可更快速地完成所有支付步骤</h2>
+					<button onclick="jFun.btnMove(2, 3)">了解详情</button>
+				</div>
+			</div>
+			<div class="section-deal-2">
+				<div class="deal-box-right">
+					<img src="images/sec3/s-deal-icon2.png" class="" alt="富寶-收款更快速" />
+					<h1>收款更快速</h1>
+					<h2>提供客户更专业的聚合支付工具<br/>
+					幫助您解决繁琐的人工核对流程</h2>					
+					<button onclick="jFun.btnMove(2, 4)">了解详情</button>
+				</div>				
+			</div>
+		</div>
+	</section>
+	<!-- 內容4 -->
+	<section class="section" id="partner" data-index="3">
+		<div class="section-partner-wrap">
+			<div class="section-partner-1">
+				<div class="container">
+					<h1>║ 支付流程展示</h1>
+					<h2>省去输入帐密的麻烦，一页即轻松完成支付三步骤！</h2>
+				</div>
+			</div>
+			<div class="section-partner-2">
+				<div class="container">
+					<div class="partner-tab">
+						<div class="partner-tab-a active" data-index="1">
+							<div class="img"></div>
+							<span class="title">于页面中填入会员帐号<br/>
+							即弹跳出会员的可支付方式</span>
+						</div>
+						<div class="partner-tab-b" data-index="2">
+							<div class="img"></div>
+							<span class="title">填入存款金额并选定支付方式<br/>
+							</span>
+						</div>
+						<div class="partner-tab-c" data-index="3">
+							<div class="img"></div>
+							<span class="title">了解订单编号并验证相关信息后<br/>
+							即完成支付</span>
+						</div>
+					</div>
+					<div class="partner-tab-box">						
+						<div class="partner-box-a active">
+							<img src="images/sec4/s-change1.png" alt="" />
+						</div>
+						<div class="partner-box-b">
+							<img src="images/sec4/s-change2.png" alt="" />
+						</div>
+						<div class="partner-box-c">
+							<img src="images/sec4/s-change3.png" alt="" />
+						</div>
+						<span class="tab-border"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 內容5 -->
+	<section class="section" id="about" data-index="4">
+		<div class="section-about-wrap">
+			<div class="section-about-1">
+				<div class="container">
+					<h1>║ 交易管理优势</h1>
+					<h2>强大的系统对账及管理后台，让您轻松管理交易数据！</h2>
+				</div>
+			</div>
+			<div class="section-about-2">
+				<div class="container">
+					<div id="svg-box">
+						<svg id="svg-block" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">						
+					    	<g>
+					        	<circle cx="512" cy="300" r="69" fill="#fff"></circle>
+					        	<circle cx="512" cy="300" r="105" fill="transparent" stroke="#fff" stroke-width="6"></circle>
+					        	<image xlink:href="images/sec5/s-logo.png" x="452" y="278" width="120px" height="44px" />
+							</g>
+							<g class="seed" stroke-width="0.2" stroke="gray" fill="none" >
+								<circle cx="512" cy="300" r="212" />
+								<circle cx="512" cy="300" r="217" />
+							</g>
+							<circle cx="512" cy="300" r="192" fill="none" stroke="#fff" stroke-width="1" stroke-miterlimit="100" stroke-dasharray="5,5">
+							    <animateTransform 
+							        attributeName="transform" 
+							        attributeType="XML" 
+							        type="rotate"
+							        dur="25s" 
+							        from="0 512 300"
+							        to="-360 512 300" 
+							        repeatCount="indefinite" />
+							</circle>
+							<circle cx="512" cy="300" r="212" fill="none" stroke="#fff" stroke-width="1" stroke-miterlimit="5" stroke-dasharray="150">
+							    <animateTransform 
+							        attributeName="transform" 
+							        attributeType="XML" 
+							        type="rotate"
+							        dur="25s" 
+							        from="0 512 300"
+							        to="-360 512 300" 
+							        repeatCount="indefinite" />
+							</circle>
+							<!-- 1 -->
+							<g>
+							<line x1="571" y1="211" x2="631" y2="128" style="stroke: #f68d2f; stroke-width: 4" />
+							<circle cx="571" cy="211" r="13" fill="#f68d2f"></circle>	
+								<circle cx="571" cy="211" r="9" fill="#fff"></circle>
+							</g>
+							<g class="ball-1">
+								<circle cx="631" cy="128" r="76" fill="#f68d2f"></circle>								
+								<image xlink:href="images/sec5/s-ball-icon1.png" x="580" y="87" width="102px" height="82px" />
+								<text x="720" y="84" font-family="微軟正黑體" font-size="26" font-weight="600" fill="#4feaff" text-anchor="start" style="letter-spacing: 1px;">提升人员效率</text>
+								<text x="720" y="118" font-family="微軟正黑體" font-size="16" fill="#ccc" text-anchor="start" style="letter-spacing: 2px;">
+								    <tspan x="720" y="118">取代过去人工核对的繁琐流程</tspan>
+								    <tspan x="720" y="143">款项可更准确且快速地到账完成</tspan>
+								</text>
+							</g>
+							<!-- 2 -->
+							<g>
+								<line x1="614" y1="324" x2="687" y2="349" style="stroke: #bb5548; stroke-width: 4" />
+								<circle cx="614" cy="324" r="13" fill="#bb5548"></circle>	
+								<circle cx="614" cy="324" r="9" fill="#fff"></circle>
+							</g>
+							<g class="ball-2">								
+								<circle cx="687" cy="349" r="53" fill="#bb5548"></circle>
+								<image xlink:href="images/sec5/s-ball-icon2.png" x="659" y="322" width="56px" height="54px" />
+								
+								<text x="757" y="338" font-family="微軟正黑體" font-size="26" font-weight="600" fill="#4feaff" text-anchor="start" style="letter-spacing: 1px;">交易管理优势</text>
+								<text x="720" y="372" font-family="微軟正黑體" font-size="16" fill="#ccc" text-anchor="start" style="letter-spacing: 2px;">
+								    <tspan x="757" y="372">系统将自动比对会员帐号正确性</tspan> 
+								    <tspan x="757" y="399">免除会员登入程序</tspan>
+								</text>
+							</g>
+							<!-- 3 -->
+							<g>
+								<line x1="512" y1="406" x2="512" y2="509" style="stroke: #884898; stroke-width: 4" />
+								<circle cx="512" cy="406" r="13" fill="#884898"></circle>	
+								<circle cx="512" cy="406" r="9" fill="#fff"></circle>
+							</g>
+							<g class="ball-3">								
+								<circle cx="512" cy="509" r="62" fill="#884898"></circle>
+								<image xlink:href="images/sec5/s-ball-icon3.png" x="473" y="471" width="78px" height="76px" />
+								<text x="586" y="533" font-family="微軟正黑體" font-size="26" font-weight="600" fill="#4feaff" text-anchor="start" style="letter-spacing: 1px;">多级优惠限额</text>
+								<text x="586" y="567" font-family="微軟正黑體" font-size="16" fill="#ccc" text-anchor="start" style="letter-spacing: 2px;">
+								    <tspan x="586" y="567">后台可依会员层级设置单比优惠及</tspan> 
+								    <tspan x="586" y="594">每日优惠上限，利于成本控管</tspan>
+								</text>
+							</g>
+							<!-- 4 -->
+							<g>
+								<line x1="409" y1="324" x2="293" y2="368" style="stroke: #17dda9; stroke-width: 4" />
+								<circle cx="409" cy="324" r="13" fill="#17dda9"></circle>	
+								<circle cx="409" cy="324" r="9" fill="#fff"></circle>	
+							</g>
+							<g class="ball-4">								
+								<circle cx="293" cy="368" r="66" fill="#17dda9"></circle>
+								<image xlink:href="images/sec5/s-ball-icon4.png" x="259" y="338" width="68px" height="60px" />
+								<text x="46" y="358" font-family="微軟正黑體" font-size="26" font-weight="600" fill="#4feaff" text-anchor="start" style="letter-spacing: 1px;">技术接入简单</text>
+								<text x="215" y="392" font-family="微軟正黑體" font-size="16" fill="#ccc" text-anchor="end" style="letter-spacing: 2px;">
+								    <tspan x="215" y="392">支付页面可视需求灵活运用</tspan> 
+								    <tspan x="209" y="419">无过度繁杂的架接流程</tspan>
+								</text> 
+							</g>
+							<!-- 5 -->
+							<g>
+								<line x1="453" y1="209" x2="406" y2="145" style="stroke: #ffd900; stroke-width: 4" />
+								<circle cx="453" cy="209" r="13" fill="#ffd900"></circle>	
+								<circle cx="453" cy="209" r="9" fill="#fff"></circle>
+							</g>
+							<g class="ball-5"> 
+								<circle cx="406" cy="145" r="59" fill="#ffd900"></circle>									
+								<image xlink:href="images/sec5/s-ball-icon5.png" x="371" y="111" width="70px" height="68px" />
+								<text x="186" y="60" font-family="微軟正黑體" font-size="26" font-weight="600" fill="#4feaff" text-anchor="start" style="letter-spacing: 1px;">多级集成对账</text>
+								<text x="344" y="94" font-family="微軟正黑體" font-size="16" fill="#ccc" text-anchor="end" style="letter-spacing: 2px;">
+								    <tspan x="352" y="94">后台可依会员层级分配支付</tspan> 
+								    <tspan x="344" y="121">工具及限额，更利财务管理</tspan>
+								</text>  
+							</g>
+					    </svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 內容6 -->
+	<section class="section" id="about2" data-index="5">
+		<div class="section-about2-wrap">
+			<div class="section-about2-1">
+				<div class="container">
+					<h1>║ 合作伙伴</h1>
+					<h2>覆盖国内主流支付平台及银行，与社会主流群体消费领域高度契合。</h2>
+				</div>
+			</div>
+			<div class="section-about2-2">
+				<div class="container">
+					<div class="diamond-section">
+				        <div class="diamond-container">
+				            <div class="diamond-outer">
+				                <label class="diamond-inner label-1"></label>
+				            </div>
+				            <div class="diamond-outer">
+				                <label class="diamond-inner label-2"></label>
+				            </div>
+				            <div class="diamond-outer">
+				                <label class="diamond-inner label-3"></label>
+				            </div>
+				            <div class="diamond-outer">
+				                <label class="diamond-inner label-4"></label>
+				            </div>
+				            <div class="diamond-outer">
+				                <label class="diamond-inner label-5"></label>
+				            </div>
+				            <div class="diamond-outer">
+				                <label class="diamond-inner label-6"></label>
+				            </div>
+				            <div class="diamond-outer">
+				                <label class="diamond-inner label-7"></label>
+				            </div>
+				            <div class="diamond-outer">
+				                <label class="diamond-inner label-8"></label>
+				            </div>
+				            <div class="diamond-outer">
+				                <label class="diamond-inner label-9"></label>
+				            </div>
+				            <div class="diamond-outer">
+				                <label class="diamond-inner label-10"></label>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 內容7 -->
+	<section class="section" id="about3" data-index="6">
+		<div class="section-about3-wrap">
+			<div class="section-about3-1">
+				<div class="container">
+					<h1>关于富宝</h1>
+					<p>富宝是商家与其会员间的一个多元化支付系统平台，专门负责处理会员在平台的支付请求信息，致力于实现国内外多卡种、多渠道、跨区域的网上支付交易服务。富宝不仅拥有逾两百人规模的团队更拥有多年从事于支付和金融行业的专业人才，努力为广大商户研发各种电子支付方式，以提供更快捷、更安全的优质服务。</p>
+				</div>
+			</div>
+			<div class="section-about3-2">
+				<div class="container">
+					<div class="contact-box clearfix">
+						<div class="contact-box-left">
+							<h2>业务谘询</h2>
+							<h4>SEND US A MESSAGE</h4>
+							<form id="">
+								<div class="form-div">
+									<div class="form-input-half">
+										<input type="text" id="username" name="username" placeholder="姓名" />
+									</div>
+									<div class="form-input-half">
+										<input type="text" id="mail" name="mail" placeholder="邮箱" />
+									</div>
+									<div class="form-input-half">
+										<input type="text" id="phone" name="phone" placeholder="电话" />
+									</div>
+									<div class="form-input-half">
+										<input type="text" id="skype" name="skype" placeholder="SKYPE / QQ" />
+									</div>
+									<div class="form-input">
+										<input type="text" id="content" name="content" placeholder="內容" />
+									</div>
+									<div class="form-input">
+										<button id="sendBtn" onclick="jFun.checkform()">提交谘询</button>
+									</div>
+								</div>							
+							</form>
+						</div>
+						<div class="contact-box-right">
+							<h2>联系我们</h2>
+							<h4>CONTACT US</h4>
+							<p>富宝非常欢迎与您达成合作意向，也非常珍视每位客户提交的咨询信息。为了让我们提供更好的服务，请尽可能详细填写相关信息，我们将尽快与您取得联系！<p>
+							<h6>时间：周一到周五 09:00-18:00<br/>
+							<a href="mailto:fubao_sales@163.com">客服邮箱：fubao_sales@163.com</a></h6>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-about3-3">
+				<div class="container">
+					<h4>©Copyright 2017 FUBAO</h4>
+				</div>		
+			</div>
+		</div>
+	</section>
+	<!-- 側邊導航 -->
+	<div class="float-nav">
+		<ul>
+			<li class="active" data-name="product" data-index='0'></li>
+			<li data-name="pay" data-index='1'></li>
+			<li data-name="deal" data-index='2'></li>
+			<li data-name="partner" data-index='3'></li>
+			<li data-name="about" data-index='4'></li>
+			<li data-name="about2" data-index='5'></li>
+			<li data-name="about3" data-index='6'></li>
+		</ul>
+	</div>
+	<!-- 至頂笑果 -->
+	<div id="toTop"></div>
+</div>
+<!-- 手機 -->
+<div class="wrap mobile-template">
+	<div id="mobileLoading">
+		<img src="images/mobile/app-icon.png" alt="富寶icon"/>
+		<span id="mobileLoadingSpan"></span>
+	</div>
+	<div id="mobile-main-block">
+		<div id="headerMobile">
+			<a class="mobile-logo" href="index.html"></a>
+			<a class="mobile-menu">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</a>
+		</div>
+		<div class="menu-box">
+			<ul class="mobile-ul">
+				<li data-id="mobileIndex">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</li>
+				<li data-id="mobileProduct">产品特色</li>
+				<li data-id="mobilePay">支付流程</li>
+				<li data-id="mobileDeal">交易管理</li>
+				<li data-id="mobilePartner">合作伙伴</li>
+				<li data-id="mobileAbout">关于富宝</li>
+			</ul>
+		</div>
+		<div class="secMobile-1" id="mobileIndex">
+			<div class="top-1">
+				<h1>方便快捷的金融接入体验</h1>
+				<p>让您的支付和收款更为简单！</p>
+				<button id="btnGoPay">富宝支付解决方案</button>
+			</div>
+			<div class="bottom-2">
+				<div class="content-1 clearfix">
+					<img src="images/mobile/sec1/s1-icon1.jpg" alt="富寶:安全支付，保障无忧" />
+					<h1>安全支付，保障无忧</h1>
+					<p>富宝通过多项安全认证</p><p>为客户提供标准的信息安全保证</p>
+				</div>
+				<div class="content-2 clearfix">
+					<img src="images/mobile/sec1/s1-icon2.jpg" alt="富寶:存取灵活，闪速到账" />
+					<h1>存取灵活，闪速到账</h1>
+					<p>一页完成所有支付流程</p><p>完整实现流动现金的便利性</p>
+				</div>
+				<div class="content-3 clearfix">
+					<img src="images/mobile/sec1/s1-icon3.jpg" alt="富寶:风险监控，支付首选" />
+					<h1>风险监控，支付首选</h1>
+					<p>7*24小时的系统自动监控</p><p>能更好地保护客户的账户安全</p>
+				</div>   			
+			</div>
+		</div>
+		<div class="secMobile-2" id="mobileProduct">
+			<div class="top-1">
+				<h1>║ 快捷支付系统</h1>
+				<p class="p1">富宝的快捷支付服务，支持多种支付方式，让会员免除登录后再交易的繁复程序，只需于单一页面中输入帐号及存款金额，即可轻松地完成支付。</p>
+				<p class="p2">另外，由于还搭配使用多重风控技术，因此更极大地提升了交易的便捷性及安全性。</p>
+			</div>			
+		</div>
+		<div class="secMobile-3" id="mobilePay">
+			<div class="top-1">
+				<h1>║ 支付流程展示</h1>
+				<p class="p1">省去输入帐密的麻烦<br/>一页即轻松完成支付三步骤 </p>
+			</div>			
+			<div class="bottom-2">
+				<div class="content-1 clearfix">
+					<img src="images/mobile/sec3/s3-icon1.png" alt="富寶:支付流程展示" />
+					<p>于页面中填入会员帐号</p><p>即弹跳出会员的可支付方式</p>
+				</div>
+				<div class="arrow-box">
+					<img src="images/mobile/sec3/s3-arrow.png" />
+				</div>
+				<div class="content-2 clearfix">
+					<img src="images/mobile/sec3/s3-icon2.png" alt="富寶:支付流程展示" />
+					<p>填入存款金额并选定支付方式</p>
+				</div>
+				<div class="arrow-box">
+					<img src="images/mobile/sec3/s3-arrow.png" />
+				</div>
+				<div class="content-3 clearfix">
+					<img src="images/mobile/sec3/s3-icon3.png" alt="富寶:支付流程展示" />
+					<p>了解订单编号并验证相关信息</p><p>即完成支付</p>
+				</div>    			
+			</div> 
+		</div>
+		<div class="secMobile-4" id="mobileDeal">
+			<div class="top-1">
+				<h1>║ 交易管理优势</h1>
+				<p class="p1">强大的系统对账及管理后台<br/>让您轻松管理交易数据</p>
+			</div>			
+			<div class="bottom-2">
+				<div class="content-1 clearfix">
+					<img src="images/mobile/sec4/s4-icon1.jpg" alt="富寶:" />
+					<h1>多级集成对账</h1>
+					<p>后台可依会员层级分配支付</p><p>工具及限额，更利财务管理</p>
+				</div> 
+				<div class="content-2 clearfix">
+					<img src="images/mobile/sec4/s4-icon2.jpg" alt="富寶:" />
+					<h1>技术接入简单</h1>
+					<p>支付页面可视需求灵活运用</p><p>无过度繁杂的架接流程</p>
+				</div>  
+				<div class="content-3 clearfix">
+					<img src="images/mobile/sec4/s4-icon3.jpg" alt="富寶:" />
+					<h1>多级优惠限额</h1>
+					<p>后台可依会员层级设置单比优惠</p><p>及每日优惠上限，利于成本控管</p>
+				</div>  
+				<div class="content-4 clearfix">
+					<img src="images/mobile/sec4/s4-icon4.jpg" alt="富寶:" />
+					<h1>交易管理优势</h1>
+					<p>系统将自动比对会员帐号正确性</p><p>免除会员登入程序</p>
+				</div> 
+				<div class="content-5 clearfix">
+					<img src="images/mobile/sec4/s4-icon5.jpg" alt="富寶:" />
+					<h1>提升人员效率</h1>
+					<p>取代过去人工核对的繁琐流程</p><p>款项可更准确且快速地到账完成</p>
+				</div>					   			
+			</div> 
+		</div>
+		<div class="secMobile-5" id="mobilePartner">
+			<div class="top-1">
+				<h1>║ 合作伙伴</h1>
+				<p class="p1">覆盖国内主流支付平台及银行<br/>与社会主流群体消费领域高度契合</p>
+			</div>  			
+			<div class="bottom-2">
+				<div class="diamond1">
+					<img src="images/mobile/sec5/s5-icon1.png" alt="" />
+				</div>
+				<div class="diamond2">
+					<img src="images/mobile/sec5/s5-icon2.png" alt="" />
+				</div>
+				<div class="diamond3">
+					<img src="images/mobile/sec5/s5-icon3.png" alt="" />
+				</div>
+				<div class="diamond4">
+					<img src="images/mobile/sec5/s5-icon4.png" alt="" />
+				</div>
+				<div class="diamond5">
+					<img src="images/mobile/sec5/s5-icon5.png" alt="" />
+				</div>
+				<div class="diamond6">
+					<img src="images/mobile/sec5/s5-icon6.png" alt="" />
+				</div>
+				<div class="diamond7">
+					<img src="images/mobile/sec5/s5-icon7.png" alt="" />
+				</div>
+				<div class="diamond8">
+					<img src="images/mobile/sec5/s5-icon8.png" alt="" />
+				</div>
+				<div class="diamond9">
+					<img src="images/mobile/sec5/s5-icon9.png" alt="" />
+				</div>
+				<div class="diamond10">
+					<img src="images/mobile/sec5/s5-icon10.png" alt="" />
+				</div>			
+			</div> 
+		</div>
+		<div class="secMobile-6" id="mobileAbout">
+			<div class="top-1">
+				<h1>关于富宝</h1>
+				<p class="p1">富宝是商家与其会员间的一个多元化支付系统平台，专门负责处理会员在平台的支付请求信息，致力于实现国内外多卡种、多渠道、跨区域的网上支付交易服务。富宝不仅拥有逾两百人规模的团队，更拥有多年从事于支付和金融行业的专业人才，努力为广大商户研发各种电子支付方式，以提供更快捷、更安全的优质服务。</p>
+			</div>  			
+			<div class="middle-2">
+				<h2>业务谘询</h2>
+				<p>SEND US A MESSAGE</p>
+				<form>
+					<div class="form-box">
+						<div class="form-row1">
+							<input type="text" id="mobileName" name="name"  placeholder="姓名" />
+							<input type="text" id="mobileMail" name="email" placeholder="邮箱" />
+						</div>
+						<div class="form-row2">
+							<input type="text" id="mobilePhone" name="phone" placeholder="电话" />
+							<input type="text" id="mobileSkype" name="skype" placeholder="SKYPE / QQ"/>						
+						</div>
+						<div class="form-row3">
+							<textarea id="mobileContent" name="content" placeholder="内容" style="resize: none;"></textarea> 	
+						</div>
+						<button id="mobileSendBtn">提交谘询</button>
+					</div>
+				</form>
+				<p class="info">时间：周一到周五 09:00-18:00</p>
+				<p class="info">客服邮箱：fubao_sales@163.com</p>
+			</div> 
+			<div class="bottom-3">
+				©Copyright 2017 FUBAO
+			</div> 
+		</div>
+	</div>			
+</div>
+<!-- js -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/pixi.js"></script>
+<script src="js/chk.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script>
+//電腦版fun
+var jFun = {
+	prevIndex: 0, 
+	curNum: 0,
+	canScroll: false,
+	arrAnimate: [],
+	//圖片預載 + loading動效
+	showLoading: function() { 
+		var that = this;
+		var loading = $('#loading'),
+			loadingSpan = $('#loading > span'),
+			loadingDiv1 = $('#loading > div:nth-of-type(1)'),
+			loadingDiv2 = $('#loading > div:nth-of-type(2)'),
+			objImg = null,
+			arrNum = 0,
+			turnOff = false,
+			arrImg = ['logo.png', 'sec1/s-product-bg.jpg', 'sec1/s-product-icon1.png', 'sec1/s-product-icon2.png', 'sec1/s-product-icon3.png'];
+		for(var i=0; i<arrImg.length; i++){
+			objImg = new Image();
+			objImg.src = 'images/' + arrImg[i];
+			objImg.onload = function(){
+				arrNum++;
+				loadingSpan.css({'width': arrNum/arrImg.length * 100 + '%'});
+				turnOff = true;
+			}
+		}				
+		loadingSpan.on('transitionend webkitTransitionEnd oTransitionEnd', spanChange);
+		loadingDiv1.on('transitionend webkitTransitionEnd oTransitionEnd', divChange);
+		function spanChange(){			
+			if(turnOff){
+				loadingSpan.hide();
+				loadingDiv1.css({'height': '0px'});
+				loadingDiv2.css({'height': '0px'});
+			}
+		};				
+		function divChange(){
+			loading.remove();
+			that.init();
+		};
+	},
+	//header動效
+	headerAnimate: function() {
+		var that = this,
+			headerPlay = new TimelineMax();
+		headerPlay.to('header', 0, {opacity: 1, top: 0});
+		headerPlay.to('a.logo', .5, {opacity: 1, top: 0, onComplete: function(){
+			$('.section').css({
+				opacity: 1,
+				transform: 'translate(0, 0)',
+				MozTransform: 'translate(0, 0)',
+				WebkitTransform: 'translate(0, 0)',
+				msTransform: 'translate(0, 0)'
+			});
+			that.arrAnimate[0].inAn();
+			that.pixi();
+		}}, .1);		
+		headerPlay.staggerTo('.menu-ul li', .2, {opacity: 1, rotationY: 0, ease:Cubic.easeOut}, 0.1);
+		headerPlay.to('.float-nav', 1, {opacity: 1, right: 50}, 1.5);			
+	},
+	//導航選單位置設置
+	floatMenuPos: function() { 
+		var windowH = $(window).height() / 2,
+			floatNavH = $('.float-nav').height() / 2;			
+		$('.float-nav').css({top: windowH - floatNavH});
+	},	
+	//主事件綁定
+	bindEvent: function(){ 
+		this.sectionMouseWheel();
+		this.sectionClick();		
+		this.floatLiClick();
+		// this.touchPos();
+	},
+	//滑鼠滾輪事件
+	sectionMouseWheel: function(){ 
+		var that = this,
+			bBtn,
+			timer;
+		clearTimeout(timer);	
+		$('.wrap').mousewheel(function(event, delta){			
+			bBtn = delta > 0 ? false : true;
+			if(that.curNum == 0 && !bBtn || that.curNum == $('.section').length - 1 && bBtn) return		
+			that.prevIndex = that.curNum;
+			if(!that.canScroll){
+				that.canScroll = true;	
+				timer = setTimeout(function(){						
+					if(bBtn){ // 下
+						if(that.curNum != $('.section').length - 1){
+							that.curNum ++;
+						}
+						that.pageMove(that.curNum);
+					}else{ // 上
+						if(that.curNum != 0){
+							that.curNum--;
+						}
+						that.pageMove(that.curNum);
+					}
+					that.navMenuActive(that.curNum);
+					that.navFloatActive(that.curNum);	
+				}, 1000)					
+			}
+			return false;	
+		})	
+	},
+	btnMove: function(oldIndex, newIndex) {
+		var that = this;
+		if(!that.canScroll){
+			that.canScroll = true;
+			this.prevIndex = oldIndex;
+			this.curNum = newIndex;
+			this.navMenuActive(this.curNum);	
+			this.navFloatActive(this.curNum);
+			this.pageMove(this.curNum);
+		}
+	},
+	//滾屏click
+	moveClick: function(parent, children, parentNode) { 
+		var that = this;
+		if(parentNode) parentNode = false;
+		$(parent).find(children).on('click', function(e){
+			e.preventDefault();
+			if(!that.canScroll){
+				that.canScroll = true;
+				if(parentNode){
+					var $li = $(this).parent();					
+					$li.addClass('active').siblings('li').removeClass('active');
+				}else{
+					$(this).addClass('active').siblings('li').removeClass('active');
+				} 
+				that.prevIndex = that.curNum;
+				var indexNum = $(this).attr('data-index');
+				that.navMenuActive(indexNum);						
+				that.navFloatActive(indexNum);		
+				that.curNum = indexNum;					
+				that.pageMove(indexNum);	
+			}
+			return false;
+		});	
+	},
+	sectionClick: function(ev){
+		this.moveClick('.menu-ul', 'a', true);
+	},
+	floatLiClick: function(ev){
+		this.moveClick('.float-nav', 'li', false);
+	},
+	lineAnimate: function(){ // menuLine動效
+		var lineplay = new TimelineMax();
+		$('.menu-ul > li > a').bind('mouseenter', function(){
+			var w = $(this).width();
+			var l = $(this).offset().left;
+			lineplay.clear();
+			lineplay.to('.line', 0.4, {opacity: 1, left: l, width: w});
+		});
+		$('.menu-ul > li > a').bind('mouseleave', function(){
+			lineplay.clear();
+			lineplay.to('.line', 0.4, {opacity: 0});
+		});
+	},
+	//頁面滾屏
+	pageMove: function(num){ 
+		var that = this,
+			sectionH = $('.section').height();
+		$('html, body').stop(true, false).animate({scrollTop: sectionH * num}, 400, function(){
+        	that.canScroll = false; 
+		});
+		if(this.arrAnimate[num].inAn){
+			this.arrAnimate[num].inAn();		
+		}
+		this.arrAnimate[num] = {};		
+	},
+	navMenuActive: function(num) {		
+		var number = Number(num) + 1;
+		switch(number){
+			case 1:
+			case 2:
+			case 3:
+				liActive(1);
+				break;
+			case 4:
+				liActive(2);
+				break;
+			case 5:
+				liActive(3);
+				break;
+			case 6:
+				liActive(4);
+				break;
+			case 7:									
+			liActive(5);
+				break;
+		}
+		function liActive(index){
+			$('.menu > .menu-ul > li:nth-child('+ index +')').addClass('active').siblings('li').removeClass('active');
+		};
+	},
+	navFloatActive: function(num){	
+		var number = Number(num) + 1,			
+			nav = '.float-nav > ul > li:nth-child(' + number + ')';
+		$(nav).addClass('active').siblings(
+			'li').removeClass('active');
+	},
+	autoTab: function(){
+		var that = this,		
+			tabAll = $('.section-partner-2 > div.container'),			
+			now = 1,
+			timer;
+		clearInterval(timer);
+		timer = setInterval(change, 6000);	
+		function change(){			
+			now++;
+			if(now == 4) now = 1
+			$('.partner-tab > div:nth-of-type('+ now +')').addClass('active').siblings('div').removeClass('active');
+			$('.partner-tab-box > div:nth-of-type('+ now +')').css({'zIndex': 999}).addClass('active fadeIn animated').siblings('div').css({'zIndex': 998}).removeClass('active fadeIn animated05');
+		}		
+	},
+	randomDiamond: function(){
+		var	diamonds = $('.diamond-container > .diamond-outer'),
+			delayTime = 100;
+		show();
+		function show(){
+			var diamondsLen = diamonds.length,
+				randomSet = Math.floor(Math.random() * diamondsLen);
+			$(diamonds[randomSet]).css({visibility: 'visible', opacity: '0'}).animate({opacity: '1'}, 1000);		
+			diamonds.splice(randomSet, 1);
+			if(diamondsLen > 0){
+				setTimeout(function(){
+					show()
+				}, delayTime);
+			}else{
+				return false;
+			}
+		};
+	},
+	toTop: function(){
+		var that = this,
+			topBtn = $('#toTop');
+		topBtn.on('click', function(){
+			$('html, body').animate({scrollTop: '0'}, 500);
+			that.navMenuActive(0);
+			that.navFloatActive(0);
+			that.curNum = 0;
+		});
+		$(window).on('load scroll resize', function(){
+			var showTop = $(window).height() / 2;
+			if($(window).scrollTop() > showTop){
+				topBtn.fadeIn('normal');
+			} else {
+				topBtn.fadeOut('normal');
+			}
+		})
+	},
+	pixi: function(){
+		var app = new PIXI.Application({width: 957, height: 542, transparent: true,}),
+			pixiDiv = $('#pixi');
+		pixiDiv.append(app.view);
+		PIXI.loader
+	    .add('required/sprites.json')
+	    .load(onAssetsLoaded);
+	    function onAssetsLoaded(){
+	    	var explosionTextures = [],        
+        		i;
+		    for(i=0; i<58; i++){
+		        var texture = PIXI.Texture.fromFrame('run_' + (i+1));
+		        explosionTextures.push(texture);
+		    }
+		    for(i=0; i<1; i++){
+		        var explosion = new PIXI.extras.AnimatedSprite(explosionTextures);
+		        explosion.x = app.renderer.width / 2;
+		        explosion.y = app.renderer.height / 2;
+		        explosion.animationSpeed = 0.3;
+		        explosion.anchor.set(0.5);
+		        explosion.gotoAndPlay(0);
+		        app.stage.addChild(explosion);
+		    }
+	    };
+	    app.start();	    
+	},
+	hoverZindex: function(){
+		var d1 = $('.section-deal-1'),
+			d2 = $('.section-deal-2');
+			d1H1 = $('.deal-box-left h1'),
+			d2H1 = $('.deal-box-right h1'),
+			d1H2 = $('.deal-box-left h2'),
+			d2H2 = $('.deal-box-right h2'),
+			d1Btn = $('.deal-box-left button'),
+			d2Btn = $('.deal-box-right button'),
+			d1Img = $('.deal-box-left img'),
+			d2Img = $('.deal-box-right img'),
+			d2R = $('.deal-box-right');
+			
+		d1Btn.hover(function(){
+			d1.css({'zIndex': 75, 'left': '-48%', 'backgroundColor': '#701414'})
+			d2.css({'left': '52%'})
+			d1Img.attr('src','images/sec3/s-deal-icon1-h.png');
+			d1H1.css({'color': '#ffd9b3'}, 500)
+			d1H2.css({'color': '#ffd9b3'}, 500)
+		},function(){
+			d1.css({'zIndex': 50, 'left': '-50%', 'backgroundColor': 'rgba(112, 20, 20, .7)'})				
+			d2.css({'left': '50%'})
+			d1Img.attr('src','images/sec3/s-deal-icon1.png');
+			d1H1.css({'color': '#fff'})
+			d1H2.css({'color': '#fff'})
+		});
+		d2Btn.hover(function(){
+			d2.css({'zIndex': 75, 'left': '48%', 'backgroundColor': '#27415c'})
+			d1.css({'left': '-52%'})
+			d2R.css({'right': '55%'})
+			d2Img.attr('src','images/sec3/s-deal-icon2-h.png');
+			d2H1.css({'color': '#78fff4'}, 500)
+			d2H2.css({'color': '#78fff4'}, 500)
+		},function(){
+			d2.css({'zIndex': 50, 'left': '50%', 'backgroundColor': 'rgba(39, 65, 92, .7)'})			
+			d1.css({'left': '-50%'})
+			d2R.css({'right': '55%'})	
+			d2Img.attr('src','images/sec3/s-deal-icon2.png');
+			d2H1.css({'color': '#fff'})
+			d2H2.css({'color': '#fff'})
+		})
+	},
+	inOutAnimate: function(){ // 入場&出場
+		var that = this;
+		this.arrAnimate = [
+			{
+				inAn: function(){
+					var secTop = $('.section-product-1'),
+						secBot = $('.section-product-2'),
+						secTopH1 = $('.section-product-1 h1'),
+						secTopH2 = $('.section-product-1 h2'),
+						secTopBtn = $('.section-product-1 button');
+					setTimeout(function(){
+						secTop.stop().animate({opacity: 1}, 500, function(){
+							secTopH1.addClass('fadeInUp animated');
+							secTopH2.addClass('fadeInUp animated2');
+							secTopBtn.addClass('fadeInUp animated3');
+						})
+						secBot.stop().animate({opacity: 1}, 500);						
+					}, 500)					
+				},
+				outAn: function(){
+					var secTop = $('.section-product-1'),
+						secBot = $('.section-product-2'),
+						secTopH1 = $('.section-product-1 h1'),
+						secTopH2 = $('.section-product-1 h2'),
+						secTopBtn = $('.section-product-1 button');
+					secTop.css({opacity: 0});
+					secBot.css({opacity: 0});
+					secTopH1.css({opacity: 0});
+					secTopH2.css({opacity: 0});
+					secTopBtn.css({opacity: 0});
+				}
+			},
+			{
+				inAn: function(){
+					var secTop = $('.section-pay-1'),
+						secTopH1 = $('.section-pay-1 h1'),
+						secTopP = $('.section-pay-1 p');
+					setTimeout(function(){
+						secTop.stop().animate({opacity: 1}, 500, function(){
+							secTopH1.addClass('fadeInUp animated05');
+							secTopP.addClass('fadeInUp animated');
+						})						
+					}, 300)
+				},
+				outAn: function(){
+					var secTop = $('.section-pay-1'),
+						secTopH1 = $('.section-pay-1 h1'),
+						secTopP = $('.section-pay-1 p');
+					secTop.css({opacity: 0});
+					secTopH1.css({opacity: 0});
+					secTopP.css({opacity: 0});
+				}
+			},
+			{
+				inAn: function(){
+					var secLeft = $('.section-deal-1'),
+						secRight = $('.section-deal-2'),
+						secLeftBox = $('.deal-box-left'),
+						secLeftBoxImg = $('.deal-box-left img'),
+						secLeftBoxH1 = $('.deal-box-left h1'),
+						secLeftBoxH2 = $('.deal-box-left h2'),
+						secLeftBoxBtn = $('.deal-box-left button'),
+						secRightBox = $('.deal-box-right'),
+						secRightBoxImg = $('.deal-box-right img'),
+						secRightBoxH1 = $('.deal-box-right h1'),
+						secRightBoxH2 = $('.deal-box-right h2'),
+						secRightBoxBtn = $('.deal-box-right button');
+					setTimeout(function(){
+						secLeft.stop().animate({opacity: 1}, 500, function(){
+							secLeftBox.stop().animate({opacity: 1}, 500, function(){
+								secLeftBoxImg.addClass('fadeInLeft animated05');
+								secLeftBoxH1.addClass('fadeInLeft animated05');
+								secLeftBoxH2.addClass('fadeInLeft animated05');
+								secLeftBoxBtn.addClass('fadeInLeft animated');
+							})				
+						})
+						secRight.stop().animate({opacity: 1}, 500, function(){
+							secRightBox.stop().animate({opacity: 1}, 500, function(){
+								secRightBoxImg.addClass('fadeInRight animated05');
+								secRightBoxH1.addClass('fadeInRight animated05');
+								secRightBoxH2.addClass('fadeInRight animated05');
+								secRightBoxBtn.addClass('fadeInRight animated');
+							})
+						})						
+					}, 500)				
+				},
+				outAn: function(){
+					var secLeft = $('.section-deal-1'),
+						secRight = $('.section-deal-2'),
+						secLeftBox = $('.deal-box-left'),
+						secLeftBoxImg = $('.deal-box-left img'),
+						secLeftBoxH1 = $('.deal-box-left h1'),
+						secLeftBoxH2 = $('.deal-box-left h2'),
+						secLeftBoxBtn = $('.deal-box-left button'),
+						secRightBox = $('.deal-box-right'),
+						secRightBoxImg = $('.deal-box-right img'),
+						secRightBoxH1 = $('.deal-box-right h1'),
+						secRightBoxH2 = $('.deal-box-right h2'),
+						secRightBoxBtn = $('.deal-box-right button');
+					secLeft.css({opacity: 0});
+					secRight.css({opacity: 0});
+					secLeftBox.css({opacity: 0});
+					secLeftBoxImg.css({opacity: 0});
+					secLeftBoxH1.css({opacity: 0});
+					secLeftBoxH2.css({opacity: 0});
+					secLeftBoxBtn.css({opacity: 0});
+					secRightBoxImg.css({opacity: 0});
+					secRightBox.css({opacity: 0});
+					secRightBoxH1.css({opacity: 0});
+					secRightBoxH2.css({opacity: 0});
+					secRightBoxBtn.css({opacity: 0});
+				}
+			},
+			{
+				inAn: function(){
+					var secTop = $('.section-partner-1'),
+						secBot = $('.section-partner-2');
+					setTimeout(function(){
+						secTop.addClass('fadeInDown animated05');
+						secBot.addClass('fadeInUp animated');				
+					}, 500)					
+					setTimeout(function(){
+						that.autoTab()
+					}, 1000)
+				},
+				outAn: function(){
+					var secTop = $('.section-partner-1'),
+						secBot = $('.section-partner-2');
+					secTop.css({opacity: 0});
+					secBot.css({opacity: 0});
+				}
+			},	
+			{
+				inAn: function(){
+					var secTop = $('.section-about-1'),
+						secBot = $('.section-about-2');
+					setTimeout(function(){
+						secTop.addClass('fadeInDown animated05');
+						secBot.addClass('fadeInUp animated');
+						
+					}, 500)		
+				},
+				outAn: function(){
+					var secTop = $('.section-about-1'),
+						secBot = $('.section-about-2');
+					secTop.css({opacity: 0});	
+					secBot.css({opacity: 0});
+				}
+			},	
+			{
+				inAn: function(){
+					var secTop = $('.section-about2-1');				
+					setTimeout(function(){
+						secTop.addClass('fadeInDown animated05');
+					}, 500)	
+					that.randomDiamond()
+											
+				},
+				outAn: function(){
+					var secTop = $('.section-about2-1');
+					secTop.css({opacity: 0});	
+				}
+			},	
+			{
+				inAn: function(){
+					var secTop = $('.section-about3-1'),
+						secMid = $('.section-about3-2'),
+						secBot = $('.section-about3-3');
+					setTimeout(function(){
+						secTop.addClass('fadeInDown animated05');
+						secMid.addClass('fadeInUp animated');
+						secBot.addClass('fadeInUp animated');
+					}, 500)				
+				},
+				outAn: function(){
+					var secTop = $('.section-about3-1'),
+						secMid = $('.section-about3-2'),
+						secBot = $('.section-about3-3');
+					secTop.css({opacity: 0});	
+					secMid.css({opacity: 0});	
+					secBot.css({opacity: 0});	
+				}
+			},																			
+		];
+		for(var i=0; i<this.arrAnimate.length; i++){
+			this.arrAnimate[i].outAn();
+		}
+	},	
+	resize: function(){
+		var that = this;
+		$(window).resize(function(){	
+			that.floatMenuPos();
+		})
+	},
+	checkform: function(){
+		var err = new chk();
+        err.id_ary  = ['username', 'mail', 'phone', 'skype', 'content'];
+        err.str_ary = ['未填姓名', '未填信箱', '未填電話', '未填通訊軟體帳號', '未填內容'];		
+		if($.trim($('#mail').val())!= ''){
+            err.mail_val('mail', '信箱格式錯誤!');
+        }
+		err.result(false);
+	},
+	init: function(){ //初始配置
+		$('html, body').animate({scrollTop: 0},0);
+		this.curNum = 0;
+		this.bindEvent(); // 事件綁定
+		this.inOutAnimate(); // 入場動畫		
+		this.headerAnimate(); // header動畫
+		this.lineAnimate(); // line動畫
+		this.floatMenuPos(); // 導航點位置設置
+		this.resize(); // 螢幕重置
+		this.hoverZindex(); // 左右		
+		this.toTop(); // 至頂
+	}
+}
+// 手機版fun
+var jMobileFun = function() {
+	var that = this;
+	this.switch = false;	
+	this.loading = function(){
+		var mobileLoadingSpan = $('#mobileLoadingSpan');
+			arrImg = ['mobile/loading-bg.jpg', 'logo.png', 'mobile/app-icon.png', 'mobile/sec1/s1-bg.jpg', 'mobile/sec1/s1-icon1.jpg', 'mobile/sec1/s1-icon2.jpg', 'mobile/sec1/s1-icon3.jpg'],
+			objImg = null,
+			arrNum = 0,
+			turnOff = false;
+		for(var i=0; i<arrImg.length; i++){
+			objImg = new Image();
+			objImg.src = 'images/' + arrImg[i];
+			objImg.onload = function(){
+				arrNum++;
+				turnOff = true;
+			}
+		}	
+		setTimeout(function(){
+			if(turnOff = true){
+				$('#mobileLoading').slideUp('1000');
+				$('#mobile-main-block').animate({opacity: 1}, 1000)
+			}		
+		}, 1500)		
+	}
+	this.menuSwitch = function(){
+		$('.mobile-menu').click(function(e){
+			if(that.switch){
+				$('.mobile-menu').removeClass('active')
+				$('.menu-box').slideUp('fast');
+				that.switch = false;
+			}else{
+				$('.mobile-menu').addClass('active')
+				$('.menu-box').slideDown('fast');
+				that.switch = true;
+			}
+		})	
+	};
+	this.pageMove = function(){
+		$('.mobile-ul li').click(function(){
+			var target = $(this).attr('data-id'),
+				headerH = $('#headerMobile').height(),			
+				targetH = $('#' + target).offset().top;
+			$('html, body').animate({scrollTop: targetH - headerH}, 500);
+			$('.mobile-menu').removeClass('active')
+			$('.menu-box').fadeOut('fast');
+			that.switch = false;
+		})
+	};
+	this.goPay = function(){
+		$('#btnGoPay').click(function(){
+			var targetH = $('#mobileProduct').offset().top,
+				headerH = $('#headerMobile').height();
+			$('html, body').animate({scrollTop: targetH - headerH}, 500);
+		})
+	};
+	this.checkform = function(){
+		var err = new chk();
+        err.id_ary  = ['mobileName', 'mobileMail', 'mobilePhone', 'mobileSkype', 'mobileContent'];
+        err.str_ary = ['未填姓名', '未填信箱', '未填電話', '未填通訊軟體帳號', '未填內容'];		
+		if($.trim($('#mobileMail').val())!= ''){
+            err.mail_val('mobileMail', '信箱格式錯誤!');
+        }
+		err.result(false);
+	};
+	var init = function(){
+		$('html, body').animate({scrollTop: 0},0);
+		that.loading();		
+		that.menuSwitch();
+		that.pageMove();
+		that.goPay();
+		$('#mobileSendBtn').click(function(){
+			that.checkform();
+		})
+	}
+	init();
+}
+//畫面一載入
+$(function() {
+	var isTouchDevice = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|playbook|silk|BlackBerry|BB10|Windows Phone|Tizen|Bada|webOS|IEMobile|Opera Mini)/);
+	if(isTouchDevice){
+		$('.pc-template').hide();
+		$('.mobile-template').show();
+		// Mobile 初始化
+		var mobileFun = new jMobileFun();	
+	}else{
+		// PC 初始化
+		jFun.showLoading();	
+	}	
+	// 切換直/橫屏，重新reload
+	if(navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('Android') > 0){
+		$(window).on('orientationchange', function(){
+			$('html, body').animate({scrollTop: 0}, 0);
+			location.reload();
+		});
+	}		
+})
+</script>
+</body>
+</html>
+
